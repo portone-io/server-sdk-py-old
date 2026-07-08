@@ -28,7 +28,7 @@ jobs:
           python-version: "3.9"
       - uses: yezz123/setup-uv@4819cd88f8d0991d99e4d10c85da3e4d22528951 # v4
       - name: Install git-filter-repo
-        uses: awalsh128/cache-apt-pkgs-action@latest
+        uses: awalsh128/cache-apt-pkgs-action@553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9 # v1.6.3
         with:
           packages: git-filter-repo
           version: "1.0"
@@ -51,7 +51,7 @@ jobs:
           name: python-package-distributions
           path: dist/
       - name: Publish distribution to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # release/v1
       - name: Sign the dists with Sigstore
         uses: sigstore/gh-action-sigstore-python@61f6a500bbfdd9a2a339cf033e5421951fbc1cd2 # v2.1.1
         with:

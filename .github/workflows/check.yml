@@ -22,7 +22,7 @@ jobs:
           python-version: "3.9"
       - uses: yezz123/setup-uv@4819cd88f8d0991d99e4d10c85da3e4d22528951 # v4
       - name: Install git-filter-repo
-        uses: awalsh128/cache-apt-pkgs-action@latest
+        uses: awalsh128/cache-apt-pkgs-action@553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9 # v1.6.3
         with:
           packages: git-filter-repo
           version: "1.0"
